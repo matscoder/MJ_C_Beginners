@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	// printf() 中字符串需要引号
-	printf("Hello, World!");
+	// printf() 脰脨脳脰路没麓庐脨猫脪陋脪媒潞脜
+	printf("Hello, World!\n");
 	return 0;
 }
