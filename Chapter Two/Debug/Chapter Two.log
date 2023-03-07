@@ -1,2 +1,3 @@
 ﻿  2-2.c
-  Chapter Two.vcxproj -> D:\mj-c code\Chapter Two\Debug\Chapter Two.exe
+D:\克隆仓库明解c语言\MJ_C_Beginners\Chapter Two\2-2.c(209,12): warning C4476: "printf": 格式说明符中的类型字段字符“b”未知
+  Chapter Two.vcxproj -> D:\克隆仓库明解c语言\MJ_C_Beginners\Chapter Two\Debug\Chapter Two.exe

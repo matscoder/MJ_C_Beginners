@@ -142,7 +142,7 @@ return  0 ;
 
 
 //读取三个整数，并显示它们的合计值和平均值
-int main()
+/*int main()
 {
     int a, b, c;
   puts("读取三个整数。");
@@ -155,4 +155,63 @@ int main()
   printf("它们的平均值是%f", (double)(a + b + c) / 3);
   
   return 0;
+}*/
+
+//转换
+//int main()
+//{
+//    printf("[%d]\n",123);
+//    printf("[%.4d]\n",123);
+//    printf("[%4d]\n",123);
+//    printf("[%04d]\n",123);
+//    printf("[%-4d]\n",123);
+//
+//    printf("[%d]\n", 12345);
+//    printf("[%.3d]\n", 12345);
+//    printf("[%3d]\n", 12345);
+//    printf("[%03d]\n", 12345);
+//    printf("[%-3d]\n", 12345);   
+//    printf("[%6d]\n", 12345);   
+//    printf("[%.6d]\n", 12345);   //最低位数大于输出数值时，与06d的效果是一样的，.6d还带有限制小数位数的作用
+//
+//
+//    printf("[%f]\n", 123.13);
+//    printf("[%4.1f]\n", 123.13); //=.1f  
+//    printf("[%6.1f]\n", 123.13);   //浮点数中。算一位吗   .后面的作用是限制小数
+//
+//    printf("[%f]\n", 123.13);
+//    printf("[%.1f]\n", 123.13);
+//    printf("[%4.1f]\n", 123.13);
+//
+//    printf("[%.3f]\n", 123.13);
+//
+//    return 0;
+//}
+
+
+
+//练习2-6
+/*int main()
+{
+    double g;
+    printf("请输入您的身高"), scanf("%lf", &g);
+    printf("您的标准体重是%.1f", (g - 100) * 0.9);
+
+}*/
+
+
+
+//最后总结题目
+int main()
+{
+    int a, b;
+    printf("整数a和b的值:"), scanf("%d", &a), scanf("%d", &b);  //scanf函数能否同时输入两个数据
+    printf("a+b=%d\na-b=%d\na*b=%d\na/b=%d\na%b=%d\n", a + b, a - b, a * b, a / b, a % b);
+    printf("(a+b)/2=%d\n平均值=%f", (a + b) / 2, (double)(a + b) / 2.0);  //分子加double或分母变为浮点数类型均可实现输出结果的类型转换。
+
+
+    double r;
+    printf("半径:"), scanf("%lf", &r);                          //浮点数中.也算单独一位数，4.250中，5.3=.3   //.4f  ,1.2测试结果
+    printf("半径为%5.3f的圆的面积是%.3f",r,3.14*r*r );
+    return 0;
 }
