@@ -360,7 +360,7 @@ return 0;
 //练习3-9
 //使用条件运算符实现练习3-6的结果，求三个数的最小值
 
-int main()
+/*int main()
 {
 	int a, b, c,min;
 	printf("请输入3个整数"), scanf("%d%d%d", &a, &b, &c);
@@ -370,7 +370,7 @@ int main()
 	printf("三个整数中的最小值是%d", min);
 
 	return 0;
-}
+}*/
 
 //求三个数最大值三种情况:
 //1.
@@ -389,3 +389,31 @@ int main()
 
 
 //复合语句（程序块）
+
+int main()
+{
+	int n1, n2, max, min;
+	printf("请输入两个整数"), scanf("%d %d", &n1, &n2);
+	//方法1
+	//if (n1 > n2)printf("较大的数是%d\n较小的数是%d", n1, n2);
+	//else printf("较大的数是%d\n较小的数是%d", n2, n1);
+
+	//方法2:复合语句（程序块）
+	
+	
+	/*if (n1 > n2) {
+		max = n1;
+	    min = n2;}
+	else	{
+		max = n2;
+	    min = n1;
+		}
+		printf("较大的数是%d,较小的数是%d", max, min);*/
+
+		//方法3:条件运算符实现
+		max = (n1 > n2) ? n1 : n2;
+		min = (n1 <n2) ? n1 : n2;
+		printf("较大的数是%d,较小的数是%d",max,min);
+
+	return 0;
+}
