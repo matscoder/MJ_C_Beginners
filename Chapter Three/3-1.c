@@ -388,8 +388,8 @@ return 0;
 
 
 
-//复合语句（程序块）
-
+//复合语句（程序块） 3-16
+/*
 int main()
 {
 	int n1, n2, max, min;
@@ -401,14 +401,14 @@ int main()
 	//方法2:复合语句（程序块）
 	
 	
-	/*if (n1 > n2) {
+	if (n1 > n2) {
 		max = n1;
 	    min = n2;}
 	else	{
 		max = n2;
 	    min = n1;
 		}
-		printf("较大的数是%d,较小的数是%d", max, min);*/
+		printf("较大的数是%d,较小的数是%d", max, min);
 
 		//方法3:条件运算符实现
 		max = (n1 > n2) ? n1 : n2;
@@ -416,4 +416,68 @@ int main()
 		printf("较大的数是%d,较小的数是%d",max,min);
 
 	return 0;
-}
+}*/
+
+
+//逻辑运算符
+//3-17
+/*
+int main()
+{
+	int month;
+	printf("请输入月份"), scanf("%d", &month);
+	if (month >= 3 && month <= 5)     //与运算符
+		printf("%d月是春天\n", month);
+	else if (month >= 6 && month <= 8)
+		printf("%d月是夏天\n", month);
+	else if (month >= 9 && month <= 11)
+		printf("%d月是秋天\n", month);
+	else if (month == 12 || month == 2 || month == 1) //或运算符
+		printf("%d月是冬天\n", month);
+	else
+		printf("%d月不存在!!!\n", month);
+
+	return 0;
+
+
+
+} 
+*/
+
+//练习3-10 求三个值相等情况
+
+int main()
+{
+	int A, B, C;
+	printf("请输入三个整数") , scanf("%d%d%d", &A, &B, &C);
+
+	//if (A == B == C)puts("三个值都相等");  使用双目运算符判断是否可行  ***
+	if (A == B && B == C)puts("三个值都相等");
+	else if (A == B || B == C || A == C)puts("有两个值相等");
+	else puts("三个值各不相同");
+
+	return 0;
+} 
+
+
+//练习3-11
+/*
+int main()
+{
+	int A, B, value;
+	printf("请输入2个整数"), scanf("%d %d", &A, &B);
+	//条件运算符写法
+	value = (A > B) ? A - B : B - A;
+	printf("它们的差是%d\n", value);
+	if (value <= 10)puts("它们的差小于等于10");
+	else puts("它们的差大于等于11");
+
+
+	//逻辑或运算符写法
+
+	if ((A >= B && A - B <= 10) || (B >= A && B - A <= 10))
+		puts("它们的差小于等于10");
+	else
+		puts("它们的差大于等于11");
+	return 0;
+}*/
