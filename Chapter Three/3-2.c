@@ -33,10 +33,9 @@
 //	puts("B"); break;
 //		case 2:puts("C");
 //		case 5:puts("D"); break;
-//		case 3:puts("F"); break;
 //		case 6:puts("E"); break;
+//      default:puts("F"); break;
 //}
-//
 //	return 0;
 //}
 
