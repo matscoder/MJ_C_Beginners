@@ -446,18 +446,18 @@ int main()
 
 //练习3-10 求三个值相等情况
 
-int main()
-{
-	int A, B, C;
-	printf("请输入三个整数") , scanf("%d%d%d", &A, &B, &C);
-
-	/*if (A == B == C)puts("三个值都相等"); */ //使用双目运算符判断是否可行  ***
-	if (A == B && B == C)puts("三个值都相等");
-	else if (A == B || B == C || A == C)puts("有两个值相等");
-	else puts("三个值各不相同");
-
-	return 0;
-} 
+//int main()
+//{
+//	int A, B, C;
+//	printf("请输入三个整数") , scanf("%d%d%d", &A, &B, &C);
+//
+//	/*if (A == B == C)puts("三个值都相等"); */ //使用双目运算符判断是否可行  ***
+//	if (A == B && B == C)puts("三个值都相等");
+//	else if (A == B || B == C || A == C)puts("有两个值相等");
+//	else puts("三个值各不相同");
+//
+//	return 0;
+//} 
 
 
 //练习3-11
