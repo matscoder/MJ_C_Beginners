@@ -62,36 +62,36 @@
 
 
 //练习4-1
-int main()
-{
-	int retry;
-	do {
-		int no;
-		printf("请输入1个整数");
-		scanf("%d", &no);
-		if (no == 0)puts("该整数为0");
-		else if (no > 0)puts("该整数为正数");
-		else puts("该整数为负数");
-		printf("是否继续?<Yes...0/No...9>");
-		scanf("%d", &retry);
-
-	} while (retry == 0);
-
-	return 0;
-}
-
-
-//练习4-2
-
-int main()
-{
-	int retry;
-	do {
-		int a; int b;
-			printf("请输入两个整数 :");
-			printf("整数1 :")，scanf("%d", &a);
-			printf("整数2 :"), scanf("%d", &b);
-
-		
-	}
-}
+//int main()
+//{
+//	int retry;
+//	do {
+//		int no;
+//		printf("请输入1个整数");
+//		scanf("%d", &no);
+//		if (no == 0)puts("该整数为0");
+//		else if (no > 0)puts("该整数为正数");
+//		else puts("该整数为负数");
+//		printf("是否继续?<Yes...0/No...9>");
+//		scanf("%d", &retry);
+//
+//	} while (retry == 0);
+//
+//	return 0;
+//}
+//
+//
+////练习4-2
+//
+//int main()
+//{
+//	int retry;
+//	do {
+//		int a; int b;
+//			printf("请输入两个整数 :");
+//			printf("整数1 :")，scanf("%d", &a);
+//			printf("整数2 :"), scanf("%d", &b);
+//
+//		
+//	}
+//}
