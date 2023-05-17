@@ -253,7 +253,7 @@
 }*/
 
 //Á·Ï°4-12
-int main()
+/*int main()
 {
 	int a;
 int i=0;
@@ -279,4 +279,4 @@ int i=0;
 printf("%d", i);
 	puts("¡£");
 	return 0;
-}
+}*/
