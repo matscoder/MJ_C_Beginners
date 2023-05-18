@@ -47,7 +47,7 @@
 
 
 //练习4-13
-int main()
+/*int main()
 {
 	int a, b;
 	int	sum=0;
@@ -59,5 +59,58 @@ int main()
 		sum += b + 1;
 	}
 	printf("1到%d的和是%d", a, sum);
+	return 0;
+}*/
+
+
+//练习4-14
+/*int main()
+{
+
+}
+*/
+
+
+//练习4-15   //先了解清楚计算身高体重的公式
+/*int main()
+{
+	int a, b, c;
+	printf("开始数值:"), scanf("%d", & a);
+	printf("结束数值:"), scanf("%d", &  b);
+	printf("间隔数值:"), scanf("%d", & c);
+
+
+}*/
+
+
+//代码4-14
+
+//int main()
+//{
+//	int a, i;
+//	printf("输入1个整数值:"), scanf("%d", &a);
+//
+//	//方法1，使用if语句
+//	/*for (i = 1; i <= a; i++)    //i=1   <=应不应该有?
+//	{
+//		if (i % 2 == 0)
+//			printf("%d\t", i);
+//	}*/
+//	//方法2，for语句中直接使用复合运算符
+//	for (i = 2; i <= a; i += 2)   //i=2,  <=应不应该有?，求该整数值以下的正偶数，不应该包含该输入的整数
+//		printf("%d", i);
+//	return 0;
+//}
+
+//代码4-15
+int main()
+{
+	int a, b;
+	printf("请输入1个整数值:"), scanf("%d", &b);
+
+	for (a = 1; a <= b; a++)   //a<=b,最后输出a会比b大1，如果用<,又会无法输出整数自身的约数值
+		if (b % a == 0)
+			printf("%d\n\t", a);    
+
 	return 0;
 }
