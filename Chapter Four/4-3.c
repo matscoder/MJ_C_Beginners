@@ -47,7 +47,7 @@
 
 
 //练习4-13
-int main()
+/*int main()
 {
 	int a, b;
 	int	sum=0;
@@ -60,7 +60,7 @@ int main()
 	}
 	printf("1到%d的和是%d", a, sum);
 	return 0;
-}
+}*/
 
 
 //练习4-14
