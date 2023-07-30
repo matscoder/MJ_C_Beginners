@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS
+//#include<stdio.h>
 
 //代码4-16
 /*int main()
@@ -188,16 +188,16 @@
 }*/
 
 //练习4-25
-int main()
-{
-	int a, b, c, d;
-	printf("让我们来画一个向下的金字塔：\n金字塔有几层:"), scanf("%d", &c);
-	for (a = 1; a <= c; a++)
-	{
-		for (d = 1; d <= a % 10;d++)
-			printf(" ");
-		for (b = 1; b <= a % 10; b++)
-				printf("*");
-	}
-	return 0;
-}(未完成！)
+///int main()
+//{
+//	int a, b, c, d;
+//	printf("让我们来画一个向下的金字塔：\n金字塔有几层:"), scanf("%d", &c);
+//	for (a = 1; a <= c; a++)
+//	{
+//		for (d = 1; d <= a % 10;d++)
+//			printf(" ");
+//		for (b = 1; b <= a % 10; b++)
+//				printf("*");
+//	}
+//	return 0;
+//}(未完成！)
