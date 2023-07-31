@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS
+//#include<stdio.h>
 
 //代码5-1
 /*int main()
@@ -179,7 +179,7 @@
 }*/
 
 //代码5-8  重点！
-int main()
+/*int main()
 {
 	int a;
 	int V[7];
@@ -200,4 +200,140 @@ int main()
 
 	return 0;
 
+}*/
+
+//代码5-9
+/*int main()
+{
+	int a;
+	int tensu[5];
+	int sum = 0;
+
+	printf("请输入5名学生的分数。\n");
+	for (a = 0; a < 5; a++) {
+		printf("%2d号:", a + 1);
+		scanf("%d", &tensu[a]);
+		sum += tensu[a];
+
+	}
+	printf("总分:%5d\n", sum);
+	printf("平均分：%5.1f\n", (double)sum / 5);
+
+	return 0;
+}*/
+
+//代码5-10
+/*#define NUMBER 6 
+int main()
+{
+	int a;
+	int tensu[NUMBER];
+	int sum = 0;
+
+	printf("请输入%d名学生的分数：\n",NUMBER);
+	for (a = 0; a < NUMBER ; a++) {
+		printf("%2d号学生:", a + 1);
+		scanf("%d", &tensu[NUMBER]);
+		sum += tensu[NUMBER];
+		
+	}
+	printf("总分:%5d", sum);
+	printf("平均分: %5.1f", sum / (double)NUMBER);
+	return 0;
+}*/
+
+//代码5-11
+/*#define NUMBER 5
+int main()
+{
+	int a;
+	int tensu[NUMBER];
+	int max, min;
+
+	printf("请输入%d名学生的分数:\n", NUMBER);
+	for (a = 0; a < NUMBER; a++) {
+		printf("%2d号:", a+1);
+		scanf("%5d", &tensu[a]);
+
+	} 
+	min = max = tensu[0];
+	for (a = 1; a < NUMBER; a++) {
+		if (tensu[a] > max) max = tensu[a];
+		if (tensu[a] < min) min = tensu[a];
+	}
+
+	printf("最高分：%2d", max);
+	printf("最低分：%2d", min);
 }
+*/
+
+//练习5-5    着重推演！  // 再运行一遍！
+
+/*#define NUMBER 7
+int main()
+{
+	int a;
+	int V[NUMBER];
+
+	for (a = 0; a < NUMBER; a++) {
+		printf("V[%d]:", a);
+		scanf("%d", &V[a]);
+	}
+	for (a = 0; a < NUMBER/2; a++) {
+		int s = V[a];
+		V[a] = V[NUMBER - a-1];
+		V[NUMBER - a-1] = s;
+
+	}
+	puts("倒序排列后的结果：");
+	for (a = 0; a < NUMBER; a++)
+		printf("V[%d]=%d\n", a, V[a]);
+
+	return 0;
+
+}*/
+
+//代码5-12/////未解决
+/*#define NUMBER 80
+
+int main()
+{
+	int i, j;
+	int num;
+	int tesu[NUMBER];
+	int bunpu[11] = { 0 };
+
+	printf("请输入学生人数：");
+	do {
+		scanf("%d", &num);
+		if (num<1 || num>NUMBER)
+			printf("\a 请输入1-%d 的数字:", NUMBER);
+	} while (num<1 || num>NUMBER);
+
+	printf("请输入%d人的分数。\n", num);
+
+	for (i = 0; i < num; i++) {
+		printf("%2d号:", i + 1);
+		do {
+			scanf("%2d", &tesu[i]);
+			if (tesu[i] < 0 || tesu[i]>100)
+				printf("\a请输入1-100的分数值：");
+		} while (tesu[i] < 0 || tesu[i > 100]);
+		
+	}
+
+	puts("\n---分布图---分布图");
+	printf("100:");
+
+}*/
+
+//练习5-7
+//#define NUMBER
+//int main()
+//{
+//
+//}
+//
+////练习5-8
+//
+////练习5-9
