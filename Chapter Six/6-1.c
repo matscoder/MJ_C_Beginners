@@ -1,5 +1,5 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
+//#define _CRT_SECURE_NO_WARNINGS
+//#include<stdio.h>
 
 //函数调用  代码清单6-1
 /*int max2(int a, int b)
@@ -256,7 +256,7 @@ int main()
 
 
 //练习6-5
-int sump(int n)
+/*int sump(int n)
 {
 	int i=1;
 	int tmp=0 ;
@@ -281,7 +281,7 @@ int main()
 	printf("1到该整数之间所有整数的和为:%d", sump(a));
 
 	return 0;
-}
+}*/
 
 
 
