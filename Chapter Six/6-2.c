@@ -183,7 +183,7 @@ int main(void)
 
 //代码6-12
 //把0 赋值给有n个元素的数组v的所有元素
-void set_zero(int v[], int n)
+/*void set_zero(int v[], int n)
 {
 	int i;
 	for (i = 0; i < n; i++)
@@ -214,4 +214,117 @@ int main()
 	printf("把0赋给了两个数组的所有元素");
 	printf("ary1="), print_array(ary1, 5), putchar('\n');
 	printf("ary2="), print_array(ary2, 3), putchar('\n');
+}*/
+
+
+//练习6-8
+/*int min_of(const int v[], int n)
+{
+	int min = v[0];
+		int i;
+	for (i = 0; i < n; i++) {
+		if (v[i] < min)
+			min = v[i];
+	}
+	return min;
 }
+
+int main()
+{
+	int i;
+	int x[5];
+	printf("请输入1组数:");
+	for (i = 0; i < 5; i++) {
+		printf("%d：", i + 1), scanf("%d", &x[i]);
+	}
+	printf("最小的数是:%d", min_of(x, 5));
+
+	return 0;
+}*/
+
+
+//练习6-9//是否要加宏？
+/*void rev_intary(int v[], int n)
+{
+	//temp=1  假设共7i,i从1到7数值   temp=v[1]=1,v[1]=v[7-1-1]=5,v[5]=tmp,互换数值
+		//1=5
+	//	5=1
+
+	int temp, i;
+	for (i = 0; i < n / 2; i++)
+	{
+		temp = v[i];
+		v[i] = v[n - i - 1];
+		v[n - i - 1] = temp;
+	}
+}
+
+int main()
+{
+	int n, i;
+	int v[n]=;
+		
+
+	printf("请输入数组的元素个数:"), scanf("%d", &n);
+
+	printf("输入数组各元素的值:");
+	for (i = 0; i < n; i++) {
+		scanf("%d", &v[i]);
+	}
+
+	rev_intary(v, n);
+
+	puts("输出各组元素倒序排列的值");
+	for (i = 0; i < n; i++) {
+		printf("%d ", v[i]);
+	}
+
+	return 0;
+}*/
+
+//练习6-10
+
+
+
+
+
+//代码6-13
+/*#define NUMBER 5
+#define FALLED -1
+
+int search(const int v[], int key, int n)
+{
+	int i = 0;
+
+	while (1)
+	{
+		if (i == n)         //什么原理？
+			return FALLED;
+		if (v[i] == key)
+			return i;
+		i++;
+	}
+}
+
+int main()
+{
+	int i, ky, idx; //ky是要查找的值，idx接收函数search的结果
+	int vx[NUMBER];
+
+	for (i = 0; i < NUMBER; i++) {
+		printf("vx[%d]:", i);
+		scanf("%d", &vx[i]);
+		putchar('\n');
+	}
+	printf("要查找的值:");
+	scanf("%d", &ky);
+
+	idx = search(vx, ky, NUMBER);
+
+	if (idx == FALLED)
+		puts("\a查找失败");
+	else
+		printf("%d是数组的第%d号元素",ky,idx+1);
+	return 0;
+}
+*/

@@ -1,2 +1,6 @@
-﻿  6-2.c
+﻿  6-3.c
+D:\克隆仓库明解c语言\MJ_C_Beginners\Chapter Six\6-3.c(192,9): warning C4101: “j”: 未引用的局部变量
+D:\克隆仓库明解c语言\MJ_C_Beginners\Chapter Six\6-3.c(216,80): warning C4047: “函数”:“const int (*)[3]”与“int”的间接级别不同
+D:\克隆仓库明解c语言\MJ_C_Beginners\Chapter Six\6-3.c(216,77): warning C4024: “sum_ary2D”: 形参和实参 1 的类型不同
+D:\克隆仓库明解c语言\MJ_C_Beginners\Chapter Six\6-3.c(205): warning C4715: “sum_ary2D”: 不是所有的控件路径都返回值
   Chapter Six.vcxproj -> D:\克隆仓库明解c语言\MJ_C_Beginners\Chapter Six\Debug\Chapter Six.exe
