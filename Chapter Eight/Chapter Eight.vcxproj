@@ -142,6 +142,8 @@
     <ClCompile Include="8-1.c" />
     <ClCompile Include="8-2.c" />
     <ClCompile Include="8-3.c" />
+    <ClCompile Include="8-4.c" />
+    <ClCompile Include="8-5.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -77,7 +77,7 @@ int main()
 }*/
 
 //代码8-4
-#define puts_alert(str)(putchar('\a'),puts(str))
+/*#define puts_alert(str)(putchar('\a'),puts(str))
 
 int main()
 {
@@ -89,4 +89,4 @@ int main()
 		puts_alert("这个数是0");
 
 	return 0;
-}
+}*/
