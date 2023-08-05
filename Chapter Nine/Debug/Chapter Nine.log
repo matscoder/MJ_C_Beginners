@@ -1,0 +1,4 @@
+﻿  9-2.c
+D:\克隆仓库明解c语言\MJ_C_Beginners\Chapter Nine\9-2.c(25,9): warning C4477: “scanf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int”
+D:\克隆仓库明解c语言\MJ_C_Beginners\Chapter Nine\9-2.c(28,10): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 2 拥有了类型“int”
+  Chapter Nine.vcxproj -> D:\克隆仓库明解c语言\MJ_C_Beginners\Chapter Nine\Debug\Chapter Nine.exe
