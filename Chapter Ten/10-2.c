@@ -127,6 +127,9 @@ int main()
 		return 0;
 }*/
 
+
+
+/*
 //练习10-3  //均无法运行，什么原因？？？
 //方法1:使用一个对象式宏
 void sort3(int* n1, int* n2, int* n3)
@@ -184,3 +187,4 @@ int main()
 
 		return 0;
 }
+*/
